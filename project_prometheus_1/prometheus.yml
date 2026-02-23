@@ -9,7 +9,7 @@ alerting:
   alertmanagers:
     - static_configs:
         - targets:
-          - alertmanager: 9093
+           - alertmanager:9093
 
 # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
 rule_files:
@@ -26,7 +26,7 @@ scrape_configs:
     # scheme defaults to 'http'.
 
     static_configs:
-      - targets: ["34.207.82.154:9100", "54.226.77.202:9100"]
+      - targets: ["34.229.138.73:9100", "34.229.123.9:9100"]
        # The label name is added as a label `label_name=<label_value>` to any timeseries scraped from this config.
         labels:
           app: "prometheus"
