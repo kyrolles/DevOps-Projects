@@ -1,4 +1,4 @@
-# Project Prometheus 1 — Disk Usage Monitoring & Alerting
+# Disk Usage Monitoring & Alerting
 
 A monitoring stack using **Prometheus**, **Alertmanager**, and **Node Exporter** on AWS EC2, with alerts sent via **Telegram** and **Email**.
 
