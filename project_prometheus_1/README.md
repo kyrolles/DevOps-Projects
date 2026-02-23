@@ -19,15 +19,14 @@ A monitoring stack using **Prometheus**, **Alertmanager**, and **Node Exporter**
 
 Install and run Node Exporter on each EC2 instance to expose hardware/OS metrics on port `9100`.
 
-![Node Exporter Setup](images/node_exporter_setup.png)
-
+<img width="1920" height="941" alt="Image" src="https://github.com/user-attachments/assets/cfb4cb49-1a3c-45ca-9295-b0072afd0bba" />
 ---
 
 ### 2. Simulate High Disk Usage
 
 Use `fallocate` to create a large file and push disk usage above 80% to trigger the alert.
 
-![Fallocate Disk Fill](images/fallocate_disk_fill.png)
+<img width="1920" height="941" alt="Image" src="https://github.com/user-attachments/assets/646451f7-0566-4278-a1af-acea59ac8433" />
 
 ---
 
@@ -37,8 +36,7 @@ Use `fallocate` to create a large file and push disk usage above 80% to trigger 
 docker compose up -d
 ```
 
-![Docker Compose Up](images/docker_compose_up.png)
-
+<img width="1910" height="1072" alt="Image" src="https://github.com/user-attachments/assets/dc359ba9-c7e6-43dd-ac19-cb05999c7e86" />
 ---
 
 ## Alerts
@@ -47,7 +45,7 @@ docker compose up -d
 
 Once disk usage exceeds 80%, the alert enters **PENDING** state (waiting for the `for: 1m` duration).
 
-![Prometheus Pending](images/prometheus_pending.png)
+<img width="1910" height="1072" alt="Image" src="https://github.com/user-attachments/assets/df4fd9e9-adfa-4831-b2ab-c532b970003b" />
 
 ---
 
@@ -55,7 +53,7 @@ Once disk usage exceeds 80%, the alert enters **PENDING** state (waiting for the
 
 After 1 minute, the alert transitions to **FIRING**.
 
-![Prometheus Firing](images/prometheus_firing.png)
+<img width="1920" height="925" alt="Image" src="https://github.com/user-attachments/assets/117903ec-76b5-459b-bec1-e97d78c10c92" />
 
 ---
 
@@ -63,7 +61,7 @@ After 1 minute, the alert transitions to **FIRING**.
 
 Alertmanager receives the firing alert and routes it to both receivers.
 
-![Alertmanager Alert](images/alertmanager_alert.png)
+<img width="1920" height="925" alt="Image" src="https://github.com/user-attachments/assets/0d25c7a9-1077-4468-8bab-01f8685785b3" />
 
 ---
 
@@ -71,13 +69,13 @@ Alertmanager receives the firing alert and routes it to both receivers.
 
 ### Telegram
 
-![Telegram Alert](images/telegram_alert.png)
+<img width="1444" height="874" alt="Image" src="https://github.com/user-attachments/assets/769d306d-3b62-4f42-9f4b-e7b6b536ebfa" />
 
 ---
 
 ### Email (Gmail)
 
-![Email Alert](images/email_alert.png)
+<img width="1920" height="957" alt="Image" src="https://github.com/user-attachments/assets/44f75593-f51b-4cfb-a0f3-7d8fc9aab42f" />
 
 ---
 
