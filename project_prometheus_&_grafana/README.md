@@ -88,23 +88,21 @@ Grafana is added to the stack for visual dashboards on top of Prometheus metrics
 
 Add `grafana/grafana` to the `docker-compose.yml` and bring the full stack up. All three containers — Prometheus, Alertmanager, and Grafana — should be running.
 
-![Docker Compose — Grafana container running](images/grafana-docker-compose.png)
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1ed2729f-1333-42b1-ac29-bf1665486731" />
 ---
 
 ### 5. Connect Prometheus as a Data Source
 
 In Grafana (`localhost:3000`), navigate to **Connections → Data Sources** and add Prometheus with the URL `http://prometheus:9090`. The status should show **Supported**.
 
-![Grafana — Prometheus data source configured](images/grafana-datasource.png)
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/62d89973-ebd0-40d9-87af-78b99d3a4761" />
 ---
 
 ### 6. Node Exporter Full Dashboard
 
 Import the **Node Exporter Full** dashboard (ID `1860`) from Grafana Labs. It provides real-time visibility into CPU, Memory, Disk, and Network metrics for each monitored EC2 instance.
 
-![Grafana — Node Exporter Full dashboard](images/grafana-dashboard.png)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/64c8f49c-26fb-47c4-b18b-e2cf3717d184" />
 
 ---
 
