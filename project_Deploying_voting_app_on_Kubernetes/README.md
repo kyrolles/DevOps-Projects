@@ -71,6 +71,14 @@ kubectl get services
 | Voting app | http://localhost:31000 |
 | Results app | http://localhost:31001 |
 
+## Screenshots
+
+### Voting & Results App
+![Voting and Results App](screenshots/app-screenshot.png)
+
+### Cluster Pods & Services
+![kubectl pods and services output](screenshots/kubectl-output.png)
+
 ## Cleanup
 
 ```bash
