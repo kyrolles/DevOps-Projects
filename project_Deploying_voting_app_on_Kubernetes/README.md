@@ -74,10 +74,10 @@ kubectl get services
 ## Screenshots
 
 ### Voting & Results App
-![Voting and Results App](screenshots/app-screenshot.png)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2eccb163-2f7e-49f9-8438-8043b832182b" />
 
 ### Cluster Pods & Services
-![kubectl pods and services output](screenshots/kubectl-output.png)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/06294292-4567-402a-b7b1-fc965e0fb5f6" />
 
 ## Cleanup
 
